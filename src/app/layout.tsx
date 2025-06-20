@@ -46,8 +46,8 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
-        {/* flex footer at bottom of page, padding top 68px */}
-        <main className="flex flex-col min-h-screen justify-between pt-[68px]">
+        {/* flex footer at bottom of page, padding top 68px, center content */}
+        <main className="flex flex-col min-h-screen justify-between pt-[68px] items-center">
           {children}
           {/* footer with text center */}
           <footer className="bg-background/80 backdrop-blur-sm ">
