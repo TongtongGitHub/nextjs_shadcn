@@ -14,35 +14,33 @@ import { VideoJS } from "@/components/video";
 
 export default function Home() {
   const playerRef = React.useRef(null);
-  
+
   const videoJsOptions = {
-    autoplay: true,
+    autoplay: false,
     controls: true,
     responsive: true,
     fluid: true,
-    sources: [{
-      src: "https://r46tfhsyx9bcfmzw.public.blob.vercel-storage.com/video/class_video-bAtHSAyCyrocTU0JI5GzXkdPpHfmEM.mp4",
-      type: "video/mp4"
-    }]
   };
 
-  const handlePlayerReady = (player: any) => {
-    playerRef.current = player;
-
-    // You can handle player events here, for example:
-    player.on('waiting', () => {
-      console.log('player is waiting');
-    });
-
-    player.on('dispose', () => {
-      console.log('player will dispose');
-    });
-  };
   return (
     // banner section with dummyimage and text center
     <div className="relative w-full h-full">
-      {/* show video in background */}
-      <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      {/* different video sources */}
+      <VideoJS options={{
+        ...videoJsOptions,
+        sources: [{
+          src: "https://r46tfhsyx9bcfmzw.public.blob.vercel-storage.com/video/class_video-bAtHSAyCyrocTU0JI5GzXkdPpHfmEM.mp4",
+          type: "video/mp4"
+        }]
+      }} />
+      <br />
+      <VideoJS options={{
+        ...videoJsOptions,
+        sources: [{
+          src: "/video/graduate.mp4",
+          type: "video/mp4"
+        }]
+      }} />
       {/* <Carousel className="w-full h-full mt-5">
         <CarouselContent>
           {Array.from({ length: 11 }).map((_, index) => (
