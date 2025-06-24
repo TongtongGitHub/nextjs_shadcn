@@ -26,7 +26,7 @@ export default function Home() {
     }]
   };
 
-  const handlePlayerReady = (player) => {
+  const handlePlayerReady = (player: any) => {
     playerRef.current = player;
 
     // You can handle player events here, for example:
