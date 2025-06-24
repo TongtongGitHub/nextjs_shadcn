@@ -36,18 +36,18 @@ export default function RootLayout({
               <Link className="hover:text-primary" href="/">
                 Home
               </Link>
-              <Link className="hover:text-primary" href="/about">
+              {/* <Link className="hover:text-primary" href="/about">
                 About
-              </Link>
+              </Link> */}
             </div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <Button>Login</Button>
               <Button>Sign up</Button>
-            </div>
+            </div> */}
           </nav>
         </header>
         {/* flex footer at bottom of page, padding top 68px, center content */}
-        <main className="flex flex-col min-h-screen justify-between pt-[68px] items-center">
+        <main className="flex flex-col min-h-screen justify-between pt-[56px] items-center">
           {children}
           {/* footer with text center */}
           <footer className="bg-background/80 backdrop-blur-sm ">
