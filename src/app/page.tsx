@@ -37,7 +37,7 @@ export default function Home() {
       <VideoJS options={{
         ...videoJsOptions,
         sources: [{
-          src: "video/graduate.mp4",
+          src: "https://r46tfhsyx9bcfmzw.public.blob.vercel-storage.com/video/graduate-n5diUhVyM7kirVcnfJ4fkxScBG7YsU.mp4",
           type: "video/mp4"
         }]
       }} />
