@@ -21,8 +21,8 @@ export default function Home() {
     responsive: true,
     fluid: true,
     sources: [{
-      src: '/video/child.mp4',
-      type: 'video/mp4'
+      src: "/video/child.mp4",
+      type: "video/mp4"
     }]
   };
 
