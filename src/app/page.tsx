@@ -37,7 +37,7 @@ export default function Home() {
       <VideoJS options={{
         ...videoJsOptions,
         sources: [{
-          src: "/video/graduate.mp4",
+          src: "video/graduate.mp4",
           type: "video/mp4"
         }]
       }} />
