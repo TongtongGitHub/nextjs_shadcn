@@ -14,14 +14,14 @@ import { VideoJS } from "@/components/video";
 
 export default function Home() {
   const playerRef = React.useRef(null);
-
+  
   const videoJsOptions = {
     autoplay: true,
     controls: true,
     responsive: true,
     fluid: true,
     sources: [{
-      src: "/video/child.mp4",
+      src: "https://r46tfhsyx9bcfmzw.public.blob.vercel-storage.com/video/class_video-bAtHSAyCyrocTU0JI5GzXkdPpHfmEM.mp4",
       type: "video/mp4"
     }]
   };
